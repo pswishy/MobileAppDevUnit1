@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		9DDAEEBC2B5DFE5D000B853D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDAEEBB2B5DFE5D000B853D /* AppDelegate.swift */; };
 		9DDAEEBE2B5DFE5D000B853D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDAEEBD2B5DFE5D000B853D /* SceneDelegate.swift */; };
-		9DDAEEC02B5DFE5D000B853D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDAEEBF2B5DFE5D000B853D /* ViewController.swift */; };
+		9DDAEEC02B5DFE5D000B853D /* SakomotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDAEEBF2B5DFE5D000B853D /* SakomotoViewController.swift */; };
 		9DDAEEC32B5DFE5D000B853D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DDAEEC12B5DFE5D000B853D /* Main.storyboard */; };
 		9DDAEEC52B5DFE66000B853D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DDAEEC42B5DFE66000B853D /* Assets.xcassets */; };
 		9DDAEEC82B5DFE66000B853D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DDAEEC62B5DFE66000B853D /* LaunchScreen.storyboard */; };
+		9DDAEED22B608B91000B853D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDAEED12B608B91000B853D /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9DDAEEB82B5DFE5D000B853D /* MyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DDAEEBB2B5DFE5D000B853D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DDAEEBD2B5DFE5D000B853D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9DDAEEBF2B5DFE5D000B853D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9DDAEEBF2B5DFE5D000B853D /* SakomotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SakomotoViewController.swift; sourceTree = "<group>"; };
 		9DDAEEC22B5DFE5D000B853D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DDAEEC42B5DFE66000B853D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DDAEEC72B5DFE66000B853D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DDAEEC92B5DFE66000B853D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DDAEED12B608B91000B853D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				9DDAEEBB2B5DFE5D000B853D /* AppDelegate.swift */,
+				9DDAEED12B608B91000B853D /* DetailViewController.swift */,
 				9DDAEEBD2B5DFE5D000B853D /* SceneDelegate.swift */,
-				9DDAEEBF2B5DFE5D000B853D /* ViewController.swift */,
+				9DDAEEBF2B5DFE5D000B853D /* SakomotoViewController.swift */,
 				9DDAEEC12B5DFE5D000B853D /* Main.storyboard */,
 				9DDAEEC42B5DFE66000B853D /* Assets.xcassets */,
 				9DDAEEC62B5DFE66000B853D /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DDAEEC02B5DFE5D000B853D /* ViewController.swift in Sources */,
+				9DDAEEC02B5DFE5D000B853D /* SakomotoViewController.swift in Sources */,
 				9DDAEEBC2B5DFE5D000B853D /* AppDelegate.swift in Sources */,
 				9DDAEEBE2B5DFE5D000B853D /* SceneDelegate.swift in Sources */,
+				9DDAEED22B608B91000B853D /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

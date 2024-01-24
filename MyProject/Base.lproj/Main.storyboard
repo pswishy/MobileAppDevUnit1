@@ -1,24 +1,166 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CZQ-wp-fJ9">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sakomoto View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Sakomoto View Controller" id="BYZ-38-t0r" customClass="ViewController" customModule="MyProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XUs-ba-odd" userLabel="Container View">
+                                <rect key="frame" x="30" y="84" width="333" height="692"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" axis="vertical" alignment="center" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="7k7-hY-i5K">
+                                        <rect key="frame" x="20" y="0.0" width="300" height="534"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Sakamoto" translatesAutoresizingMaskIntoConstraints="NO" id="HMR-yZ-IFU">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="RX2-bN-6aC"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" text="Family &amp; Friends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5A-nI-DwF">
+                                                <rect key="frame" x="0.0" y="344" width="300" height="49.333333333333314"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="B5A-nI-DwF" secondAttribute="height" multiplier="55:9" id="Yb8-HN-F7l"/>
+                                                    <constraint firstAttribute="width" priority="300" constant="300" id="vBM-D5-Mgw"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="to5-SH-UZw" appends="YES" id="Or2-EV-KdV"/>
+                                                </connections>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="762" text="Job" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRs-Zl-NwI">
+                                                <rect key="frame" x="0.0" y="437.33333333333337" width="300" height="26.333333333333314"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" priority="300" constant="300" id="QKv-Nb-juy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="z8j-rg-bz2" appends="YES" id="Vca-YY-LB9"/>
+                                                </connections>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IY2-7E-4Ti">
+                                                <rect key="frame" x="0.0" y="507.66666666666657" width="300" height="26.333333333333314"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" priority="300" constant="300" id="CNS-BS-Sse"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="pxF-o3-s3t" appends="YES" id="3fd-hV-LBn"/>
+                                                </connections>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="625" id="MEu-om-fV9"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="s7L-Cm-ZXT"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <constraints>
+                                    <constraint firstItem="7k7-hY-i5K" firstAttribute="centerY" secondItem="XUs-ba-odd" secondAttribute="centerY" id="MzO-xp-bLT"/>
+                                    <constraint firstItem="7k7-hY-i5K" firstAttribute="centerX" secondItem="XUs-ba-odd" secondAttribute="centerX" id="SbL-lb-2tc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XUs-ba-odd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9JT-Fs-JdE"/>
+                            <constraint firstItem="XUs-ba-odd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TQj-4f-Ign"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Sakomoto Days" id="l69-dT-8FO"/>
+                    <connections>
+                        <segue destination="7Br-i5-wFE" kind="show" identifier="detailSegue" id="1Kd-K2-W8W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="to5-SH-UZw">
+                    <connections>
+                        <action selector="didTapInfo:" destination="BYZ-38-t0r" id="BbI-Gv-zz4"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="z8j-rg-bz2">
+                    <connections>
+                        <action selector="didTapInfo:" destination="BYZ-38-t0r" id="zVD-p6-MEF"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="pxF-o3-s3t">
+                    <connections>
+                        <action selector="didTapInfo:" destination="BYZ-38-t0r" id="HXv-0d-qH2"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="H6k-Y6-D7o">
+            <objects>
+                <viewController id="7Br-i5-wFE" customClass="DetailViewController" customModule="MyProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P3u-cz-cUn">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="r2Y-ZF-bXe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="m9q-Bq-iqw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="01s-eq-v9U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2002" y="25"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zZ0-ms-wE7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CZQ-wp-fJ9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ApS-PT-FDB">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zj4-IZ-Ex9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CFf-7K-cfD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Sakamoto" width="3240" height="4050"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
