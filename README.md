@@ -4,7 +4,7 @@ Submitted by: **Pierce Medy**
 
 **My Project** is an app that introduces Taro Sakamoto from Sakomoto Days. 
 
-Time spent: **30** hours spent in total
+Time spent: **10** hours spent in total
 
 <div>
     <a href="https://www.loom.com/share/2bdadad0e7a443e4a479926b07567da5">
